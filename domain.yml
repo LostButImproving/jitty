@@ -1,0 +1,117 @@
+intents:
+- kontaktinformation
+- humør_trist
+- hilsen
+- nægte
+- indexsøgning
+- taknemmelig
+- søgning
+- nysgerrig
+- bekræft
+- humør_glad
+- usikker
+- undskyld
+- farvel
+- iligemåde
+- restaurant
+- Alder?
+- hilsen+addresse
+- hilsen+telefonnummer
+- bekræft+søgning
+- taknemmelig+nægte+farvel
+- bekræft+addresse
+- nægte+email
+- hilsen+søgning
+- 'null'
+- nægte+telefonnummer
+- nægte+søgning
+- addresse
+- nægte+addresse
+- email
+- hilsen+email
+- bekræft+telefonnummer
+- telefonnummer
+- bekræft+email
+- intet
+- navn
+- bekræft+søg
+- benægt+søgning
+- nægte+farvel
+entities:
+- index
+slots:
+  cuisine:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+  searchterm:
+    type: unfeaturized
+templates:
+  utter_ask_searchterm:
+  - text: Hvad vil du gerne søge efter?
+  utter_default:
+  - text: Beklager, jeg forstod ikke din besked
+  utter_er_der_andet:
+  - text: Er der andet jeg kan gøre for dig?
+  utter_farvel:
+  - text: Farvel, ha' en dejlig dag!
+    edited_since_last_training: true
+  - text: Ha' en god dag!
+  utter_glad:
+  - text: Fedt, hvad kan jeg hjælpe med?
+  utter_hilsen:
+  - text: Hejsa! Hvordan går det?
+  - text: Goddag!
+  utter_hjalp_det:
+  - text: Hjalp det dig?
+  utter_hvad_kan_jeg:
+  - text: Lige nu kan jeg ikke særlig mange ting, jeg er næsten helt ny. Dog kan jeg
+      lave en søgning på https://readthedocs.org, prøv det ved at nævne ordet'søg'
+  utter_i_orden:
+  - text: Det er helt i orden!
+  utter_kontaktinformation:
+  - text: Du kan komme i kontakt med et "virkeligt" menneske via. mail på kontakt@jit.nu,
+      eller via tlf. på +4563131413
+  utter_tak:
+  - text: Tak!
+  utter_email:
+  - text: Vores email er kontakt@jit.nu
+  utter_addr:
+  - text: Vi bor på Sunekær 1, 5471 Søndersø
+  - text: Du kan findes os på Sunekær 1, 5471 Søndersø.
+  utter_tlf:
+  - text: Vores telefonnummer er +456313413
+  utter_så_lidt:
+  - text: Det var så lidt :)
+  utter_skuffet_prøv_andet:
+  - text: Øv, vil du prøve noget andet?
+  utter_trist:
+  - text: Øv, det beklager jeg
+  utter_navn:
+  - text: Jeg er endnu ikke blevet navngivet, men du kan bare kalde mig Jitty :)
+actions:
+- action_search_ent
+- utter_ask_searchterm
+- utter_default
+- utter_er_der_andet
+- utter_farvel
+- utter_glad
+- utter_hilsen
+- utter_hjalp_det
+- utter_hvad_kan_jeg
+- utter_i_orden
+- utter_kontaktinformation
+- utter_opmuntring
+- utter_tak
+- utter_bed_om_humør
+- utter_hvad_kan_jeg_gøre
+- utter_email
+- utter_addr
+- utter_tlf
+- utter_så_lidt
+- utter_skuffet_prøv_andet
+- utter_trist
+- utter_navn
+- uttter_addr
+forms:
+- søgning_form

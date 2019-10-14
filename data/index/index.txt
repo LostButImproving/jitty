@@ -1,0 +1,16 @@
+ordre
+indstillinger
+Introduktion
+Indstillinger
+Adgangskontrol
+Afdelinger
+Funktionstaster
+Sortering
+Kolonner
+Søgning
+Database Query
+Eksportér
+Design Units
+Script Reference Guide
+SQL Reference Guide
+
